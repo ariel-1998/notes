@@ -1,0 +1,98 @@
+
+body{
+    background-image: url(backgrond/tile.jpg);
+}
+
+h1{
+    font-family: cursive;
+}
+
+.grid{
+    display: grid;
+    width: 50%;
+    grid-template-columns:  90%;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+    background-color: #aaa;
+    background-image: url(backgrond/formbg.jpg);
+    background-blend-mode: lighten;
+    padding-bottom: 10px;
+}
+
+.text{
+    align-self: center;
+}
+
+.btn{
+    width: 100px;
+}
+
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.note-content::-webkit-scrollbar{
+    width: 8px;
+}
+
+.note-content::-webkit-scrollbar-track{
+    background-color:rgb(240, 130, 130) ;
+}
+
+.note-content::-webkit-scrollbar-thumb{
+    background-color:black ;
+}
+
+.note-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    margin:auto;
+}
+.note{
+    background-image: url(backgrond/notebg.png);
+    width: 175px;
+    height: 250px;
+}
+.note-content{
+    height: 60%;
+    margin-left: 3%;
+    margin-bottom: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+}
+
+.note-date{
+    margin-left: 3%;
+    margin-bottom: 3px ;
+    color: red;
+
+}
+
+.note-time{
+    margin-left: 3%;
+    margin-top: 3px ;
+    color: red;
+}
+.btn-close{
+    margin-top: 14px;
+    margin-left: 85%;
+    visibility: hidden;
+}
+
+.note:hover .btn-close{
+    visibility: visible;
+
+}
+
+.new-note{
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
